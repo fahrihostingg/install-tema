@@ -13,19 +13,19 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © Fahri - Hosting                [+]${NC}"
+  echo -e "${BLUE}[+]                  © FakrulDev                [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
-  echo -e "dilarang keras untuk memperjual belikan."
+  echo -e "dilarang keras untuk dikasih gratis."
   echo -e ""
-  echo -e "𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :"
-  echo -e "01159754638"
-  echo -e "𝗬𝗢𝗨𝗧𝗨𝗕𝗘 :"
-  echo -e "@Fakrul-Afif"
+  echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
+  echo -e "@fakruldev"
+  echo -e "YOUTUBE :"
+  echo -e "rulshz"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@Fahri - Hosting"
+  echo -e "@FakrulDev"
   sleep 4
   clear
 }
@@ -58,16 +58,34 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               Licensy Fahri - Hosting             [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY FakrulDev            [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  echo -e "${YELLOW}©FakrulDev${NC}"
+
+  echo -e "${YELLOW}MASUKAN PASSWORD:${NC}"
+  read -r PASSWORD
+  if [ "$PASSWORD" = "pahri" ];
+  then
+    echo -e "${GREEN}AKSES BERHASIL${NC}}"
+  else
+    echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
+    echo -e "${YELLOW}TELEGRAM : @fakruldev${NC}"
+    echo -e "${YELLOW}WHATSAPP : wa.me/601159754638${NC}"
+    echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
+    echo -e "${YELLOW}©FakrulDev${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "fahricode!2808" ]; then
+  if [ "$USER_TOKEN" = "fakruldev!2808" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
-    echo -e "${GREEN}Buy dulu Weh Ke Fahri No 601159754638${NC}"
+    echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
+    echo -e "${YELLOW}TELEGRAM : @fakruldev${NC}"
+    echo -e "${YELLOW}WHATSAPP : wa.me/601159754638${NC}"
+    echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
+    echo -e "${YELLOW}©FakrulDev${NC}"
     exit 1
   fi
   clear
@@ -98,7 +116,7 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x33\x2E\x7A\x69\x70")
+        THEME_URL=$(echo -e "https://github.com/fahrihostingg/install-tema/raw/main/C3.zip")
         break
         ;; 
       x)
@@ -224,7 +242,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/fahrihostingg/install-tema/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/gitfdil1248/thema/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -243,7 +261,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/C2.zip https://github.com/fahrihostingg/install-tema/raw/main/C2.zip
+wget -O /root/C2.zip https://github.com/gitfdil1248/thema/raw/main/C2.zip
 
 # Ekstrak file tema
 unzip /root/C2.zip -d /root/pterodactyl
@@ -280,7 +298,7 @@ exit 0
 create_node() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    CRRATE NODE                 [+]${NC}"
+  echo -e "${BLUE}[+]                    CREATE NODE                     [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   #!/bin/bash
@@ -326,7 +344,7 @@ EOF
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 CREATE NODE & LOCATION SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES             [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
@@ -390,7 +408,7 @@ hackback_panel() {
   echo -e "                                                       "
   # Minta input dari pengguna
 read -p "Masukkan Username Panel: " user
-read -p "password login " psswd
+read -p "password login " psswdhb
   #!/bin/bash
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
@@ -401,11 +419,36 @@ hackback@gmail.com
 $user
 $user
 $user
-$passwd
+$psswdhb
 EOF
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 AKUN TELAH DI ADD             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  
+  exit 0
+}
+ubahpw_vps() {
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                    UBAH PASSWORD VPS       [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+read -p "Masukkan Pw Baru: " pw
+read -p "Masukkan Ulang Pw Baru " pw
+
+passwd <<EOF
+$pw
+$pw
+
+EOF
+
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                 GANTI PW VPS SUKSES         [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
@@ -419,21 +462,35 @@ check_token
 
 while true; do
   clear
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                   SELECT OPTION                 [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  echo -e "SELECT OPTION :"
+  echo -e "                                                                     "
+  echo -e "${BLUE}        _,gggggggggg.                                     ${NC}"
+  echo -e "${BLUE}    ,ggggggggggggggggg.                                   ${NC}"
+  echo -e "${BLUE}  ,ggggg        gggggggg.                                 ${NC}"
+  echo -e "${BLUE} ,ggg'               'ggg.                                ${NC}"
+  echo -e "${BLUE}',gg       ,ggg.      'ggg:                               ${NC}"
+  echo -e "${BLUE}'ggg      ,gg'''  .    ggg       Auto Installer FakrulDev Private   ${NC}"
+  echo -e "${BLUE}gggg      gg     ,     ggg      ------------------------  ${NC}"
+  echo -e "${BLUE}ggg:     gg.     -   ,ggg       • Telegram : t.me/fakruldev     ${NC}"
+  echo -e "${BLUE} ggg:     ggg._    _,ggg        • Creadit  : FakrulDev ${NC}"
+  echo -e "${BLUE} ggg.    '.'''ggggggp           • Support by FakrulDev ${NC}"
+  echo -e "${BLUE}  'ggg    '-.__                                           ${NC}"
+  echo -e "${BLUE}    ggg                                                   ${NC}"
+  echo -e "${BLUE}      ggg                                                 ${NC}"
+  echo -e "${BLUE}        ggg.                                              ${NC}"
+  echo -e "${BLUE}          ggg.                                            ${NC}"
+  echo -e "${BLUE}             b.                                           ${NC}"
+  echo -e "                                                                     "
+  echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"
   echo "2. Uninstall theme"
   echo "3. Configure Wings"
   echo "4. Create Node"
   echo "5. Uninstall Panel"
-  echo "6. Setteler Theme"
+  echo "6. Stellar Theme"
   echo "7. Hack Back Panel"
+  echo "8. Ubah Pw Vps"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/x):"
+  echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
   clear
 
@@ -458,6 +515,9 @@ while true; do
       ;;
       7)
       hackback_panel
+      ;;
+      8)
+      ubahpw_vps
       ;;
     x)
       echo "Keluar dari skrip."
