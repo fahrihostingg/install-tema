@@ -62,11 +62,11 @@ check_token() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}©FakrulDev${NC}"
+  echo -e "                                                       "
+  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
+  read -r USER_TOKEN
 
-  echo -e "${YELLOW}MASUKAN PASSWORD:${NC}"
-  read -r PASSWORD
-  if [ "$PASSWORD" = "pahri" ];
-  then
+  if [ "$USER_TOKEN" = "fakruldev!2808" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
@@ -74,11 +74,22 @@ check_token() {
     echo -e "${YELLOW}WHATSAPP : wa.me/601159754638${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
     echo -e "${YELLOW}©FakrulDev${NC}"
+    exit 1
+  fi
+  clear
+}
+check_password() {
   echo -e "                                                       "
-  echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
-  read -r USER_TOKEN
-
-  if [ "$USER_TOKEN" = "fakruldev!2808" ]; then
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY FakrulDev            [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  echo -e "${YELLOW}©FakrulDev${NC}"
+  echo -e "                                                       "
+  echo -e "${YELLOW}MASUKAN PASSWORD:${NC}"
+  read -r PASSWORD
+  if [ "$PASSWORD" = "pahri" ];
+  then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
@@ -459,6 +470,7 @@ EOF
 display_welcome
 install_jq
 check_token
+check_password
 
 while true; do
   clear
