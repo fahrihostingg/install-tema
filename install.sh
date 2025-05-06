@@ -13,15 +13,15 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © FakrulDev                [+]${NC}"
+  echo -e "${BLUE}[+]                  © Fakrul                [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "dilarang keras untuk dikasih gratis."
   echo -e ""
-  echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
-  echo -e "@fakruldev"
+  echo -e "TIKTOK :"
+  echo -e "rulshz"
   echo -e "YOUTUBE :"
   echo -e "rulshz"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
@@ -70,10 +70,9 @@ check_token() {
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
-    echo -e "${YELLOW}TELEGRAM : @fakruldev${NC}"
     echo -e "${YELLOW}WHATSAPP : wa.me/601159754638${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}©FakrulDev${NC}"
+    echo -e "${YELLOW}©Fakrul${NC}"
     exit 1
   fi
   clear
@@ -93,10 +92,9 @@ check_password() {
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Buy dulu Gih Ke FakrulDev${NC}"
-    echo -e "${YELLOW}TELEGRAM : @fakruldev${NC}"
     echo -e "${YELLOW}WHATSAPP : wa.me/601159754638${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}©FakrulDev${NC}"
+    echo -e "${YELLOW}©Fakrul${NC}"
     exit 1
   fi
   clear
